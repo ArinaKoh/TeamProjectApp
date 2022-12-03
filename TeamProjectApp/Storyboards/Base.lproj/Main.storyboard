@@ -92,6 +92,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Lessons"/>
                                 <connections>
                                     <action selector="lessonsButtonTapped:" destination="9kw-dM-JZT" eventType="touchUpInside" id="yak-8t-5JC"/>
+                                    <segue destination="9aS-zg-M1a" kind="presentation" identifier="goToLessonsStoryboard" modalPresentationStyle="fullScreen" id="CXA-WN-HwZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qG-wA-Jel">
@@ -133,18 +134,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Main screen" id="NLr-W2-WNE"/>
-                    <connections>
-                        <segue destination="9aS-zg-M1a" kind="show" identifier="goToLessonsStoryboard" id="JaT-2l-Ftm"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m1M-7F-B6Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1302" y="-447"/>
         </scene>
-        <!--LessonsVC-->
+        <!--LessonsViewController-->
         <scene sceneID="MYb-HY-6RP">
             <objects>
-                <viewControllerPlaceholder storyboardName="Lessons" referencedIdentifier="LessonsVC" id="9aS-zg-M1a" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Lessons" referencedIdentifier="LessonsViewController" id="9aS-zg-M1a" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="a0p-yC-RuJ"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FPw-ax-hGZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

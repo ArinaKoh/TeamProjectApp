@@ -14,13 +14,4 @@ class MainScreenViewController: UIViewController {
         
     }
     
-    @IBAction func lessonsButtonTapped(_ sender: UIButton) {
-        performSegue(withIdentifier: "goToLessonsStoryboard", sender: self)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToLessonsStoryboard" {
-            guard segue.destination is LessonsViewController else { return }
-        }
-    }
 }
