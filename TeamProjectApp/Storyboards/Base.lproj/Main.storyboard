@@ -91,8 +91,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Lessons"/>
                                 <connections>
-                                    <action selector="lessonsButtonTapped:" destination="9kw-dM-JZT" eventType="touchUpInside" id="yak-8t-5JC"/>
-                                    <segue destination="9aS-zg-M1a" kind="presentation" identifier="goToLessonsStoryboard" modalPresentationStyle="fullScreen" id="CXA-WN-HwZ"/>
+                                    <action selector="goToLessons:" destination="9kw-dM-JZT" eventType="touchUpInside" id="v9r-P2-cgk"/>
+                                    <segue destination="9aS-zg-M1a" kind="presentation" identifier="goToLessonsStoryboard" modalPresentationStyle="fullScreen" id="cI7-Vy-wp0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qG-wA-Jel">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2il-LV-uPZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bSu-DW-bW8">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -8,6 +8,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="54T-op-svy">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="keX-b9-Jcr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController storyboardIdentifier="LessonsViewController" id="bSu-DW-bW8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" restorationIdentifier="LessonsViewController" largeTitles="YES" id="AY3-en-u54">
+                        <rect key="frame" x="0.0" y="47" width="390" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="lXW-ct-rMG" kind="relationship" relationship="rootViewController" id="vqS-fg-FYj"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-1451" y="-2"/>
+        </scene>
         <!--Lessons Info-->
         <scene sceneID="pXw-ut-T9x">
             <objects>
@@ -39,22 +55,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gc7-TZ-8bb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-697" y="-2"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="eEd-hp-lOS">
-            <objects>
-                <navigationController storyboardIdentifier="LessonsViewController" id="2il-LV-uPZ" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="VVl-B6-eNA">
-                        <rect key="frame" x="0.0" y="47" width="390" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="lXW-ct-rMG" kind="relationship" relationship="rootViewController" id="lVv-ZL-iBq"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Q9Y-Q4-egX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1415" y="-2"/>
         </scene>
         <!--Lessons Details View Controller-->
         <scene sceneID="s0d-6b-0kx">
