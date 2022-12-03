@@ -11,7 +11,6 @@
         <!--Navigation Controller-->
         <scene sceneID="54T-op-svy">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="keX-b9-Jcr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController storyboardIdentifier="LessonsViewController" id="bSu-DW-bW8" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" restorationIdentifier="LessonsViewController" largeTitles="YES" id="AY3-en-u54">
                         <rect key="frame" x="0.0" y="47" width="390" height="96"/>
@@ -21,6 +20,7 @@
                         <segue destination="lXW-ct-rMG" kind="relationship" relationship="rootViewController" id="vqS-fg-FYj"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="keX-b9-Jcr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1451" y="-2"/>
         </scene>
@@ -64,7 +64,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDE-S6-MdU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelInfo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDE-S6-MdU">
                                 <rect key="frame" x="16" y="173" width="358" height="27.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
