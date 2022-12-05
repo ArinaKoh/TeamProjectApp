@@ -15,7 +15,6 @@ class MainScreenViewController: UIViewController {
     }
     
     @IBAction func goToLessons(_ sender: UIButton) {
-        performSegue(withIdentifier: "goToLessonsStoryboard", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -23,5 +22,15 @@ class MainScreenViewController: UIViewController {
             guard segue.destination is LessonsViewController else { return }
             
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationItem.setHidesBackButton(true, animated: animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationItem.setHidesBackButton(false, animated: animated)
     }
 }
