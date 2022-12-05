@@ -9,18 +9,12 @@ import UIKit
 
 class MainScreenViewController: UIViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
-    
     @IBAction func goToLessons(_ sender: UIButton) {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToLessonsStoryboard" {
             guard segue.destination is LessonsViewController else { return }
-            
         }
     }
     

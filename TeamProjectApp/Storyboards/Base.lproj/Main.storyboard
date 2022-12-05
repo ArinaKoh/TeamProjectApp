@@ -93,7 +93,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Lessons"/>
                                 <connections>
                                     <action selector="goToLessons:" destination="9kw-dM-JZT" eventType="touchUpInside" id="v9r-P2-cgk"/>
-                                    <segue destination="9aS-zg-M1a" kind="show" identifier="goToLessonsStoryboard" id="cI7-Vy-wp0"/>
+                                    <segue destination="9aS-zg-M1a" kind="show" identifier="goToLessonsStoryboard" id="Ewp-7v-xaR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qG-wA-Jel">

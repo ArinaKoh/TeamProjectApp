@@ -82,23 +82,23 @@ class LessonsViewController: UITableViewController {
         }
     }
 }
-    
-    // MARK: - Extension
-    extension LessonsViewController: UISearchBarDelegate {
-        func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-            
-            filteredLists.removeAll()
-            guard searchText != "" || searchText != " " else {
-                print("empty search")
-                return
-            }
-               
-            filteredLists = lists.flatMap{$0.lessons}.filter { lesson in
-                lesson.lessonNumber.contains(searchText)
-            }
 
-            tableView.reloadData()
+// MARK: - Extension
+extension LessonsViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        filteredLists.removeAll()
+        guard searchText != "" || searchText != " " else {
+            print("empty search")
+            return
         }
+        
+        filteredLists = lists.flatMap{$0.lessons}.filter { lesson in
+            lesson.lessonNumber.contains(searchText)
+        }
+        
+        tableView.reloadData()
     }
+}
 
 
